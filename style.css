@@ -397,12 +397,128 @@ background-color: rgb(255, 129, 129);
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
 
 .card_sad{
   display: flex;
   flex-direction: column;
+}
+
+/* happy*/
+
+
+
+.card__container__happy{
+  position: relative;
+  left: -200px;
+  width: 1400px;
+  height: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.rectangle {
+  width: 1200px;
+  height: 20px;
+  background-color: #ffffff;
+  transform: scaleX(0);             /* Start hidden horizontally */
+  transform-origin: left;           /* Grow from the left */
+  opacity: 0;
+  box-shadow: 2px 2px black; 
+  position: relative;
+  top: 160px;                     /* Invisible at first */
+}
+
+
+.elongate {
+  animation: growLeft 3.2s ease forwards;
+}
+
+@keyframes growLeft {
+  0% {
+    transform: scaleX(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+
+
+.entry{
+  animation: growup 3.2s ease forwards;
+}
+
+@keyframes growup {
+  0% {
+    transform: scaleY(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}
+
+
+
+.happy_images{
+  display: flex;
+  gap: 40px;
+}
+
+.happy_img{
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s linear;
+}
+
+.happy_img:nth-child(1).fade-in{
+  transition-delay: 0.4s;
+}
+
+.happy_img:nth-child(2).fade-in{
+  transition-delay: 0.7s;
+}
+
+.happy_img:nth-child(3).fade-in{
+  transition-delay: 1.0s;
+}
+
+.happy_img:nth-child(4).fade-in{
+  transition-delay: 1.3s;
+}
+
+
+.happy_img:nth-child(1){
+  position: relative;
+  top: -100px;
+  opacity: 0;
+}
+
+.happy_img:nth-child(2){
+  position: relative;
+  top: 150px;
+  opacity: 0;
+}
+
+.happy_img:nth-child(3){
+  position: relative;
+  top: -100px;
+  opacity: 0;
+}
+
+.happy_img:nth-child(4){
+  position: relative;
+  top: 150px;
+  opacity: 0;
+  transform-origin: top;
 }
 
 
