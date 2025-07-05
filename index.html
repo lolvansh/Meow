@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat</title>
+    <link rel="stylesheet" href="style.css">
+     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.0.6/dist/locomotive-scroll.min.js"></script>
+</head>
+<body>
+    <div class="blocks">
+        <div class="block init" data-block-section="1" data-href="home" >
+            <div class="block__title">Home</div>
+            <div class="block__number">01</div>
+        </div>
+        <div class="block init" data-block-section="2" data-href="silly" >
+            <div class="block__title">Silly</div>
+            <div class="block__number">02</div>
+        </div>
+        <div class="block init" data-block-section="3" data-href="angry" >
+            <div class="block__title">Angry</div>
+            <div class="block__number">03</div>
+        </div>
+        <div class="block init" data-block-section="4" data-href="sad">
+            <div class="block__title">Sad</div>
+            <div class="block__number">04</div>
+        </div>
+        <div class="block init" data-block-section="5" data-href="happy">
+            <div class="block__title">Happy</div>
+            <div class="block__number">05</div>
+        </div>
+    </div>
+
+    <main data-scroll-section>
+        <div class="wrap" data-scroll-section>
+            <section class="section home" data-block-section="1" id="home">
+                
+                <div class="section__text"
+                    data-scroll
+                    data-scroll-class="fade-in"
+                    data-scroll-repeat="false"
+                    data-scroll-delay="0.1">
+                    <h2 class="text">Meow</h2>
+                </div>
+
+                <div class="images row1" >
+                    <div class="img 1" data-scroll data-scroll-class="fade-in" data-scroll-delay="0.3" data-scroll-repeat="false" data-scroll-speed="1">
+                        <img src="./assets/cat_home_1.jpg" width="300 alt="cat" />
+                        <div class="img img5" data-scroll data-scroll-class="fade-in" data-scroll-delay="2.2" data-scroll-repeat="false" data-scroll-speed="3"><img src="./assets/cat_home_5.jpg" width="250" alt="cat" /></div>
+                    </div>
+                    <div class="img 2" data-scroll data-scroll-class="fade-in" data-scroll-delay="1.2" data-scroll-repeat="false" data-scroll-speed="2">
+                        <img src="./assets/cat_home_2.jpg" width="300" alt="cat" />
+                        <div class="img img3" data-scroll data-scroll-class="fade-in" data-scroll-delay="2.2" data-scroll-repeat="false" data-scroll-speed="3"><img src="./assets/cat_home_3.jpg" width="300" alt="cat" /></div>
+                    </div>
+                    <div class="img 4" data-scroll data-scroll-class="fade-in" data-scroll-delay="3.2" data-scroll-repeat="false" data-scroll-speed="3">
+                        <img src="./assets/cat_home_4.jpg" width="300" alt="cat" />
+                        <div class="img img6" data-scroll data-scroll-class="fade-in" data-scroll-delay="2.2" data-scroll-repeat="false" data-scroll-speed="3"><img src="./assets/cat_home_7.jpg" width="250" alt="cat" /></div>
+                    </div>
+                </div>
+                </section>
+
+            <section class="section silly" data-block-section="2" id="silly">
+                <div class="silly__container">
+                    <div class="title__silly" data-scroll
+                    data-scroll-class="fade-in"
+                    data-scroll-repeat="false"
+                    data-scroll-delay="0.1" >
+                    <h1>My Favs</h1>
+                </div>
+
+                    <div class="card__container">
+                        <div class="card__1" 
+                        data-scroll
+                        data-scroll-class="fade-in"
+                        data-scroll-repeat="false"
+                        data-scroll-delay="0.1">
+                            <div class="img__silly">
+                                <img class="silly_img" src="./assets/silly_1.jpg" width="300" alt="cat" />
+                            </div>
+                            <div class="img__name"><p>Ramu</p></div>
+                            <div class="img__desc">He is stupid and does he even has a license to drive? <br/>bro is late for college</div>
+                        </div>
+                        <div class="card__2"
+                        data-scroll
+                        data-scroll-class="fade-in"
+                        data-scroll-repeat="false"
+                        data-scroll-delay="0.1">
+                            <div class="img__silly">
+                                <img src="./assets/silly_2.jpg" width="300" alt="cat" />
+                            </div>
+                            <div class="img__name"><p>Pinky</p></div>
+                            <div class="img__desc">Smartest girl on the planet and she is the best <br/>she wanna eat some fries!</div>
+                        </div>
+                        <div class="card__3"
+                        data-scroll
+                        data-scroll-class="fade-in"
+                        data-scroll-repeat="false"
+                        data-scroll-delay="0.1">
+                            <div class="img__silly">
+                                <img src="./assets/silly_3.jpg" width="300" alt="cat" />
+                            </div>
+                            <div class="img__name"><p>Vedu</p></div>
+                            <div class="img__desc">Coolest! PARTY PARTY PARTY LESSGOO! <br/>Mom said to be home by 9.</div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <section class="section angry" data-block-section="3" id="angry">
+                angry Lorem Ipsum is <br />
+                simply dummy text of the <br />
+                printing and typesetting <br />industry.
+            </section>
+            <section class="section sad" data-block-section="4" id="sad">
+                sad Lorem Ipsum is <br />
+                simply dummy text of the <br />
+                printing and typesetting <br />industry.
+            </section>
+            <section class="section happy" data-block-section="5" id="happy">
+                happy Lorem Ipsum is <br />
+                simply dummy text of the <br />
+                printing and typesetting <br />industry.
+            </section>
+        </div>
+    </main>
+</body>
+<script>
+    const scroll = new LocomotiveScroll({
+        el: document.querySelector("[data-scroll-section]"),
+        smooth: true,
+        direction: "horizontal",
+    });
+     let blocks = document.querySelectorAll(".block[data-block-section]");
+    scroll.on("scroll", (args) => {
+      blocks.forEach((block) => {
+        let attr = block.getAttribute("data-block-section");
+        let section = document.querySelector(
+          `section[data-block-section='${attr}']`
+        );
+         if (section.getBoundingClientRect().left <= block.offsetWidth * attr) {
+          block.classList.add("fixed");
+          block.classList.remove("init");
+          block.classList.remove("active");
+          block.style.left = "";
+        } else if (
+          section.getBoundingClientRect().left >=
+          window.innerWidth - block.offsetWidth * (blocks.length - attr)
+        ) {
+          block.classList.add("init");
+          block.classList.remove("active");
+          block.classList.remove("fixed");
+          block.style.left = "";
+        } else {
+          block.classList.add("active");
+          block.classList.remove("init");
+          block.classList.remove("fixed");
+        }
+
+        if (block.classList.contains("active")) {
+          block.style.left = section.getBoundingClientRect().left + "px";
+        }
+      })
+    })
+
+
+
+
+</script>
+</html>
