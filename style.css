@@ -389,6 +389,21 @@ background-color: rgb(255, 129, 129);
 
 
 
+.card__container__sad{
+  position: relative;
+  left: -200px;
+  width: 1400px;
+  height: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.card_sad{
+  display: flex;
+  flex-direction: column;
+}
 
 
 
