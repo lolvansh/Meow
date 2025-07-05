@@ -232,6 +232,7 @@ background-color: rgb(255, 129, 129);
 .title__silly{
   text-align: center;
   padding-top: 20px;
+  padding-bottom: 40px;
 }
 
 .img__desc{
@@ -257,6 +258,8 @@ background-color: rgb(255, 129, 129);
   min-width: 370px;
   min-height: 490px;
 }
+
+
 
 .card__container{
   display: flex;
@@ -289,6 +292,8 @@ background-color: rgb(255, 129, 129);
     transform: translateY(30px);
     transition: all 1.2s ease-out;
 } 
+
+
 .card__1.fade-in{
   transition-delay: 0.5s;
 }
@@ -300,6 +305,91 @@ background-color: rgb(255, 129, 129);
 .card__3.fade-in{
   transition-delay: 1.1s;
 }
+
+.card__container.angry{
+  position: relative;
+  left: -200px;
+  width: 1400px;
+  height: 900px;
+}
+
+.wrap__angry{
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  min-height: 316px;
+  min-width: 1200px;
+}
+
+.angry__1, .angry__2{
+  display: flex;
+  padding: 20px;
+  padding-top: 40px;
+  gap: 20px;
+  border-radius: 20px;
+  min-height: 316px;
+  min-width: 1200px;
+  
+
+}
+
+.angry__name, .angry__name2{
+  font-size: 50px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.angry__name2{
+  text-align: right;
+    opacity: 0;
+    transform: translateX(30px);
+    transition: all 1s ease-in;
+}
+
+.angry__desc{
+  font-size: 24px;
+  line-height: 28px;
+
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 1s ease-in;
+}
+
+.angry__img1{
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: all 1s ease-in;
+}
+
+
+.angry__img1.fade-in,.angry__img2.fade-in{
+  transition-delay: 0.3s;
+}
+
+
+.angry__name{
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease-out;
+}
+
+.angry__name2{
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease-out;
+}
+
+.angry__name.fade-in , .angry__name2.fade-in{
+  transition-delay: 0.5s;
+}
+
+.angry__desc{
+  transition-delay: 0.8s;
+}
+
+
+
+
 
 
 

@@ -107,9 +107,56 @@
                 </div>
             </section>
             <section class="section angry" data-block-section="3" id="angry">
-                angry Lorem Ipsum is <br />
-                simply dummy text of the <br />
-                printing and typesetting <br />industry.
+               <div class="card__container angry">
+                <div class="wrap__angry">
+                <div class="angry__1" >
+                    <div class="angry__img1"
+                        data-scroll
+                        data-scroll-class="fade-in"
+                        data-scroll-repeat="false"
+                        data-scroll-delay="0.1">
+                        <img src="./assets/angry_1.jpg" alt="cat" width="300">
+                    </div>
+                    <div class="text__wrap">
+                        <div class="angry__name"
+                        data-scroll
+                        data-scroll-class="fade-in"
+                        data-scroll-repeat="false">
+                        <P>Chulbul Pandey</P></div>
+                        <div class="angry__desc"
+                        data-scroll
+                        data-scroll-class="fade-in"
+                        data-scroll-repeat="false"
+                        >"Look, I didn’t steal the tuna — I claimed it. First come, first serve, right? It’s not my fault she takes forever to show up like she’s walking a red carpet. I was hungry, it was open, and I ate. End of story. And now she’s giving me the cold shoulder, acting like I’ve committed a crime. I even tried to offer her the crinkly mouse toy — my favorite — but she just turned her back on me. Typical Chulbuli drama. I’m not saying sorry. Not this time. She’ll come around… eventually."
+                    </div>
+                    </div>
+                </div>
+                <div class="angry__2">
+                    <div class="text__wrap">
+                        <div class="angry__name2 angryimage2"
+                        data-scroll
+                        data-scroll-class="fade-in"
+                        data-scroll-repeat="false"
+                        data-scroll-delay="0.1"
+                        >Chulbuli Pandey</div>
+
+                        <div class="angry__desc"
+                        data-scroll
+                        data-scroll-class="fade-in"
+                        data-scroll-repeat="false"
+                        >
+                            "He knew I wanted that tuna. We always share. But no — Mr. King of the House had to gobble it all up and lick the bowl clean like I don’t exist. And then he had the audacity to nap in my sunbeam like nothing happened! The betrayal runs deep. I don’t want his crinkly mouse toy, I want an apology — and a fresh can of tuna, served first to me. Until then, I’m not even looking in his direction. Let him suffer in silence while I bask in my rightful spotlight."</div>
+                    </div>
+                    <div class="angry__img2"
+                        data-scroll
+                        data-scroll-class="fade-in"
+                        data-scroll-repeat="false"
+                        data-scroll-delay="0.1">
+                        <img src="./assets/angry_2.jpg" alt="cat" width="300">
+                    </div>
+                </div>
+                </div>
+               </div>
             </section>
             <section class="section sad" data-block-section="4" id="sad">
                 sad Lorem Ipsum is <br />
@@ -130,7 +177,7 @@
         smooth: true,
         direction: "horizontal",
     });
-     let blocks = document.querySelectorAll(".block[data-block-section]");
+    let blocks = document.querySelectorAll(".block[data-block-section]");
     scroll.on("scroll", (args) => {
       blocks.forEach((block) => {
         let attr = block.getAttribute("data-block-section");
