@@ -1,2 +1,2 @@
 A web about cat
-website: https://meowphase.netlify.app/
+https://meowphase.netlify.app/
